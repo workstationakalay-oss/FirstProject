@@ -1,1 +1,38 @@
-<br>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>Snake Game</h1>
+        <p>Use arrow keys or WASD to move. Press Space to pause.</p>
+      </header>
+
+      <section class="game">
+        <canvas id="gameCanvas" width="480" height="480" aria-label="Snake game board"></canvas>
+        <div class="hud">
+          <div class="hud__item">Score: <span id="score">0</span></div>
+          <div class="hud__item">High Score: <span id="highScore">0</span></div>
+          <button id="restartButton" class="btn" type="button">Restart</button>
+        </div>
+        <div class="status" id="status" role="status" aria-live="polite">Ready?</div>
+      </section>
+
+      <section class="controls">
+        <h2>Controls</h2>
+        <ul>
+          <li>Move: Arrow keys or WASD</li>
+          <li>Pause/Resume: Space</li>
+          <li>Restart: R</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
